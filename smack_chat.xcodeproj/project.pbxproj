@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C99BB010D9B5F1992E997BA /* Pods_smack_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B04FCEE0E1CF36ADBD73E44 /* Pods_smack_chat.framework */; };
+		E9794FED21DF95C60095A09F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9794FEC21DF95C60095A09F /* GradientView.swift */; };
 		E9D6CDD721DE4EBE00D38910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDD621DE4EBE00D38910 /* AppDelegate.swift */; };
 		E9D6CDDC21DE4EBF00D38910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D6CDDA21DE4EBF00D38910 /* Main.storyboard */; };
 		E9D6CDDE21DE4EC100D38910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D6CDDD21DE4EC100D38910 /* Assets.xcassets */; };
@@ -15,24 +16,13 @@
 		E9D6CDF121DE7C2800D38910 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDF021DE7C2800D38910 /* ChatVC.swift */; };
 		E9D6CDF321DE7C3800D38910 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDF221DE7C3800D38910 /* ChannelVC.swift */; };
 		E9D6CDF921DE8D5E00D38910 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDF721DE8D5E00D38910 /* SWRevealViewController.m */; };
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-		E9D6CDFB21DE95AF00D38910 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDFA21DE95AF00D38910 /* GradientView.swift */; };
->>>>>>> Stashed changes
-=======
-		E9D6CDFB21DE95AF00D38910 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDFA21DE95AF00D38910 /* GradientView.swift */; };
->>>>>>> Stashed changes
-=======
-		E9D6CDFB21DE95AF00D38910 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6CDFA21DE95AF00D38910 /* GradientView.swift */; };
->>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B04FCEE0E1CF36ADBD73E44 /* Pods_smack_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack_chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E84A972BD360BFD60ED60C /* Pods-smack_chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack_chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack_chat/Pods-smack_chat.debug.xcconfig"; sourceTree = "<group>"; };
 		D1940B105941C7DDBCD0B3F3 /* Pods-smack_chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack_chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack_chat/Pods-smack_chat.release.xcconfig"; sourceTree = "<group>"; };
+		E9794FEC21DF95C60095A09F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E9D6CDD321DE4EBE00D38910 /* smack_chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smack_chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D6CDD621DE4EBE00D38910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D6CDDB21DE4EBF00D38910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,18 +33,6 @@
 		E9D6CDF221DE7C3800D38910 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		E9D6CDF721DE8D5E00D38910 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		E9D6CDF821DE8D5E00D38910 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-		E9D6CDFA21DE95AF00D38910 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
-=======
-		E9D6CDFA21DE95AF00D38910 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
-=======
-		E9D6CDFA21DE95AF00D38910 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,28 +119,19 @@
 		E9D6CDEE21DE700A00D38910 /* View */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-				E9D6CDFA21DE95AF00D38910 /* GradientView.swift */,
->>>>>>> Stashed changes
-=======
-				E9D6CDFA21DE95AF00D38910 /* GradientView.swift */,
->>>>>>> Stashed changes
-=======
-				E9D6CDFA21DE95AF00D38910 /* GradientView.swift */,
->>>>>>> Stashed changes
+				E9794FEC21DF95C60095A09F /* GradientView.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
+			name = View;
+			path = smack_chat/View;
+			sourceTree = SOURCE_ROOT;
 		};
 		E9D6CDEF21DE701400D38910 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
-			sourceTree = "<group>";
+			name = Model;
+			path = smack_chat/Model;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -293,18 +262,7 @@
 			files = (
 				E9D6CDF321DE7C3800D38910 /* ChannelVC.swift in Sources */,
 				E9D6CDF121DE7C2800D38910 /* ChatVC.swift in Sources */,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-				E9D6CDFB21DE95AF00D38910 /* GradientView.swift in Sources */,
->>>>>>> Stashed changes
-=======
-				E9D6CDFB21DE95AF00D38910 /* GradientView.swift in Sources */,
->>>>>>> Stashed changes
-=======
-				E9D6CDFB21DE95AF00D38910 /* GradientView.swift in Sources */,
->>>>>>> Stashed changes
+				E9794FED21DF95C60095A09F /* GradientView.swift in Sources */,
 				E9D6CDD721DE4EBE00D38910 /* AppDelegate.swift in Sources */,
 				E9D6CDF921DE8D5E00D38910 /* SWRevealViewController.m in Sources */,
 			);
