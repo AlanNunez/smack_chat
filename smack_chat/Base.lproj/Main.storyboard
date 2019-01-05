@@ -79,17 +79,26 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zyp-av-Gd2">
+                                <rect key="frame" x="0.0" y="119" width="375" height="431"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" secondItem="AZT-lg-PYM" secondAttribute="trailing" constant="72" id="1vL-Hv-MyC"/>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" secondItem="eqY-Fh-vug" secondAttribute="trailing" constant="186" id="AhZ-gR-HLW"/>
                             <constraint firstItem="XTp-Bb-Ybm" firstAttribute="top" secondItem="5LO-h6-xvX" secondAttribute="top" constant="20" id="CXD-fd-mfE"/>
+                            <constraint firstItem="zyp-av-Gd2" firstAttribute="trailing" secondItem="5LO-h6-xvX" secondAttribute="trailing" id="FSx-Ex-MpZ"/>
                             <constraint firstItem="XTp-Bb-Ybm" firstAttribute="leading" secondItem="5LO-h6-xvX" secondAttribute="leading" constant="15" id="LRg-BU-K2W"/>
                             <constraint firstItem="M5e-aQ-VCJ" firstAttribute="leading" secondItem="XTp-Bb-Ybm" secondAttribute="leading" id="NLt-ZO-HTz"/>
+                            <constraint firstItem="gYX-Kt-SAQ" firstAttribute="top" secondItem="zyp-av-Gd2" secondAttribute="bottom" constant="20" id="OE0-M5-7ir"/>
                             <constraint firstItem="gYX-Kt-SAQ" firstAttribute="leading" secondItem="M5e-aQ-VCJ" secondAttribute="leading" id="So6-Pk-p9R"/>
                             <constraint firstItem="AZT-lg-PYM" firstAttribute="centerY" secondItem="M5e-aQ-VCJ" secondAttribute="centerY" id="V2d-Kr-O7d"/>
                             <constraint firstItem="M5e-aQ-VCJ" firstAttribute="top" secondItem="XTp-Bb-Ybm" secondAttribute="bottom" constant="20" id="ZfW-h6-Twb"/>
+                            <constraint firstItem="zyp-av-Gd2" firstAttribute="leading" secondItem="5LO-h6-xvX" secondAttribute="leading" id="aKT-dp-fVC"/>
+                            <constraint firstItem="zyp-av-Gd2" firstAttribute="top" secondItem="AZT-lg-PYM" secondAttribute="bottom" constant="20" id="d5I-bV-F76"/>
                             <constraint firstItem="AZT-lg-PYM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M5e-aQ-VCJ" secondAttribute="trailing" constant="8" symbolic="YES" id="gfg-hZ-Be4"/>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XTp-Bb-Ybm" secondAttribute="trailing" symbolic="YES" id="nI3-Rn-qqo"/>
                             <constraint firstItem="eqY-Fh-vug" firstAttribute="centerY" secondItem="gYX-Kt-SAQ" secondAttribute="centerY" id="qAH-v2-31a"/>
@@ -113,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dba-nA-Bxg" customClass="GradientView" customModule="smack_chat" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="77"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-OQ-bj5">
                                         <rect key="frame" x="12" y="47" width="24" height="18"/>
@@ -146,7 +155,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dba-nA-Bxg" firstAttribute="leading" secondItem="fTi-Lk-k0x" secondAttribute="leading" id="CXT-KP-M88"/>
-                            <constraint firstItem="dba-nA-Bxg" firstAttribute="top" secondItem="tRd-uf-UEh" secondAttribute="top" id="vIT-KV-Hyn"/>
+                            <constraint firstItem="dba-nA-Bxg" firstAttribute="top" secondItem="fTi-Lk-k0x" secondAttribute="top" id="vIT-KV-Hyn"/>
                             <constraint firstItem="tRd-uf-UEh" firstAttribute="trailing" secondItem="dba-nA-Bxg" secondAttribute="trailing" id="wAG-fP-qTe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tRd-uf-UEh"/>
