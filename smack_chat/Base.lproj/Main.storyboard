@@ -364,8 +364,8 @@
                                     <action selector="pickAvatarPressed:" destination="RcW-kC-cm6" eventType="touchUpInside" id="PLY-fj-Wtt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YV-B1-6c5">
-                                <rect key="frame" x="112" y="60" width="151.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YV-B1-6c5">
+                                <rect key="frame" x="113" y="60" width="149.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -464,21 +464,6 @@
                                     <action selector="backPressed:" destination="YKd-Sv-0ak" eventType="touchUpInside" id="xPG-sr-aUo"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1cy-ex-CMj">
-                                <rect key="frame" x="107.5" y="40" width="160" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="96t-yt-ROt"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Dark"/>
-                                    <segment title="Light"/>
-                                </segments>
-                                <color key="tintColor" red="0.35686274509803922" green="0.62352941176470589" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="segmentControl:" destination="YKd-Sv-0ak" eventType="valueChanged" id="gDq-OQ-eR5"/>
-                                    <action selector="segmentControlChanged:" destination="YKd-Sv-0ak" eventType="valueChanged" id="6on-lf-23g"/>
-                                </connections>
-                            </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="412-mL-JG5">
                                 <rect key="frame" x="0.0" y="88" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -512,15 +497,33 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="YKd-Sv-0ak" id="dG0-Hh-EQq"/>
+                                    <outlet property="delegate" destination="YKd-Sv-0ak" id="Uzt-SJ-Igz"/>
+                                </connections>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-uk-e1K">
+                                <rect key="frame" x="107.5" y="40" width="160" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Dka-vJ-ODo"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Dark"/>
+                                    <segment title="Light"/>
+                                </segments>
+                                <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentControlChanged:" destination="YKd-Sv-0ak" eventType="valueChanged" id="lqi-wM-bzw"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="haB-RN-2Yp" firstAttribute="trailing" secondItem="412-mL-JG5" secondAttribute="trailing" id="1M9-7g-ZYY"/>
-                            <constraint firstItem="1cy-ex-CMj" firstAttribute="top" secondItem="haB-RN-2Yp" secondAttribute="top" constant="20" id="CDs-II-QGQ"/>
+                            <constraint firstItem="hFw-uk-e1K" firstAttribute="centerX" secondItem="H6B-gG-OFp" secondAttribute="centerX" id="GD6-iJ-pIQ"/>
+                            <constraint firstItem="hFw-uk-e1K" firstAttribute="top" secondItem="haB-RN-2Yp" secondAttribute="top" constant="20" id="Q4F-Hd-8va"/>
                             <constraint firstItem="412-mL-JG5" firstAttribute="top" secondItem="DAB-th-hbt" secondAttribute="bottom" constant="20" id="awg-EG-73Z"/>
                             <constraint firstItem="DAB-th-hbt" firstAttribute="top" secondItem="haB-RN-2Yp" secondAttribute="top" constant="20" id="iUD-My-HVK"/>
-                            <constraint firstItem="1cy-ex-CMj" firstAttribute="centerX" secondItem="H6B-gG-OFp" secondAttribute="centerX" id="nqT-OS-Dzs"/>
                             <constraint firstItem="haB-RN-2Yp" firstAttribute="bottom" secondItem="412-mL-JG5" secondAttribute="bottom" id="nuj-PM-xlO"/>
                             <constraint firstItem="412-mL-JG5" firstAttribute="leading" secondItem="haB-RN-2Yp" secondAttribute="leading" id="pVK-2W-MoF"/>
                             <constraint firstItem="DAB-th-hbt" firstAttribute="leading" secondItem="haB-RN-2Yp" secondAttribute="leading" constant="20" id="zUp-27-6fp"/>
@@ -529,7 +532,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="412-mL-JG5" id="a7L-2A-ARz"/>
-                        <outlet property="segmentControl" destination="1cy-ex-CMj" id="tXm-rP-nqu"/>
+                        <outlet property="segmentControl" destination="hFw-uk-e1K" id="XvF-xH-2ru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58I-Qo-ieT" userLabel="First Responder" sceneMemberID="firstResponder"/>
