@@ -49,7 +49,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="gYX-Kt-SAQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="gYX-Kt-SAQ" customClass="CircleImage" customModule="smack_chat" customModuleProvider="target">
                                 <rect key="frame" x="15" y="570" width="77" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gYX-Kt-SAQ" secondAttribute="height" id="JTI-q2-P42"/>
@@ -390,7 +390,7 @@
                                     <action selector="createAccntPressed:" destination="RcW-kC-cm6" eventType="touchUpInside" id="Wol-hm-0su"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="ewm-oa-DlG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="ewm-oa-DlG" customClass="CircleImage" customModule="smack_chat" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="316.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="hSs-Pk-rrn"/>
@@ -407,22 +407,33 @@
                                     <action selector="pickBGColorPressed:" destination="RcW-kC-cm6" eventType="touchUpInside" id="hbp-Gb-am9"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-t4-ANW">
+                                <rect key="frame" x="177.5" y="528" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Dpg-dT-YKM"/>
+                                    <constraint firstAttribute="height" constant="20" id="odO-sx-rKP"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IVz-3i-1b5" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="3kx-RN-46O"/>
+                            <constraint firstItem="IVz-3i-1b5" firstAttribute="top" secondItem="Isi-t4-ANW" secondAttribute="bottom" constant="49" id="8Cg-Op-c0A"/>
                             <constraint firstItem="AcL-tL-Aat" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="AVN-8Q-X9v"/>
                             <constraint firstItem="AcL-tL-Aat" firstAttribute="width" secondItem="ewm-oa-DlG" secondAttribute="width" id="Acs-h0-6dh"/>
                             <constraint firstItem="juX-N9-fSN" firstAttribute="top" secondItem="w5o-hp-1ZY" secondAttribute="top" constant="20" id="BwV-7v-gtl"/>
                             <constraint firstItem="AcL-tL-Aat" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="Cit-Lq-aum"/>
                             <constraint firstItem="ewm-oa-DlG" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="Dl7-Ar-816"/>
                             <constraint firstItem="w5o-hp-1ZY" firstAttribute="trailing" secondItem="IVz-3i-1b5" secondAttribute="trailing" constant="62.5" id="IAY-rj-8SF"/>
+                            <constraint firstItem="w5o-hp-1ZY" firstAttribute="trailing" secondItem="Isi-t4-ANW" secondAttribute="trailing" constant="177.5" id="Lsi-0E-6do"/>
                             <constraint firstItem="iXb-hg-AwD" firstAttribute="top" secondItem="AcL-tL-Aat" secondAttribute="bottom" constant="4" id="OW0-oG-rc4"/>
+                            <constraint firstItem="Isi-t4-ANW" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="Ruu-YZ-pPS"/>
                             <constraint firstItem="MIC-XX-kBd" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="V9Y-I0-9Uc"/>
                             <constraint firstItem="2YV-B1-6c5" firstAttribute="top" secondItem="w5o-hp-1ZY" secondAttribute="top" constant="40" id="dst-uZ-ufO"/>
                             <constraint firstItem="ewm-oa-DlG" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="gnC-rf-AJW"/>
                             <constraint firstItem="AcL-tL-Aat" firstAttribute="top" secondItem="ewm-oa-DlG" secondAttribute="top" id="hgQ-TC-6UK"/>
                             <constraint firstItem="MIC-XX-kBd" firstAttribute="top" secondItem="2YV-B1-6c5" secondAttribute="bottom" constant="60" id="iLO-pB-mAW"/>
+                            <constraint firstItem="Isi-t4-ANW" firstAttribute="leading" secondItem="w5o-hp-1ZY" secondAttribute="leading" constant="177.5" id="opf-BA-Xbm"/>
                             <constraint firstItem="w5o-hp-1ZY" firstAttribute="trailing" secondItem="juX-N9-fSN" secondAttribute="trailing" constant="20" id="u2h-8V-bCl"/>
                             <constraint firstItem="iXb-hg-AwD" firstAttribute="centerX" secondItem="Wsa-DB-LPv" secondAttribute="centerX" id="x3A-gh-w23"/>
                             <constraint firstItem="w5o-hp-1ZY" firstAttribute="bottom" secondItem="IVz-3i-1b5" secondAttribute="bottom" constant="20" id="xUP-2e-gdv"/>
@@ -434,6 +445,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="PJW-su-jt6" id="xn0-qB-nTJ"/>
                         <outlet property="passTxt" destination="NRW-6N-auF" id="Jn8-em-rT0"/>
+                        <outlet property="spinner" destination="Isi-t4-ANW" id="GpT-ue-HcA"/>
                         <outlet property="userImg" destination="ewm-oa-DlG" id="HJr-xX-zAo"/>
                         <outlet property="usernameTxt" destination="eFi-SO-yxP" id="OKq-XH-1BZ"/>
                         <segue destination="oXr-jr-trf" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForWindWithSegue:sender:" id="XRu-KT-Njc"/>

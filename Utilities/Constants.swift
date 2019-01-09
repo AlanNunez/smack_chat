@@ -29,3 +29,9 @@ let USER_EMAIL = "userEmail"
 
 // Headers
 let HEADER = ["Content-Type": "application/json; charset=utf-8"]
+
+// Colors
+let smackPurplePlaceHolder = #colorLiteral(red: 0.3568627451, green: 0.6235294118, blue: 0.7960784314, alpha: 0.5090432363)
+
+//Notifications
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notiUserDataChanged")
