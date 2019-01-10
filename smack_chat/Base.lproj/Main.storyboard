@@ -72,8 +72,8 @@
                                 <rect key="frame" x="281" y="77" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-Fh-vug">
-                                <rect key="frame" x="112" y="592" width="77" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-Fh-vug">
+                                <rect key="frame" x="102" y="592" width="87" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,7 +117,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" secondItem="AZT-lg-PYM" secondAttribute="trailing" constant="72" id="1vL-Hv-MyC"/>
-                            <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" secondItem="eqY-Fh-vug" secondAttribute="trailing" constant="186" id="AhZ-gR-HLW"/>
+                            <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eqY-Fh-vug" secondAttribute="trailing" constant="186" id="AhZ-gR-HLW"/>
                             <constraint firstItem="XTp-Bb-Ybm" firstAttribute="top" secondItem="5LO-h6-xvX" secondAttribute="top" constant="20" id="CXD-fd-mfE"/>
                             <constraint firstItem="zyp-av-Gd2" firstAttribute="trailing" secondItem="5LO-h6-xvX" secondAttribute="trailing" id="FSx-Ex-MpZ"/>
                             <constraint firstItem="XTp-Bb-Ybm" firstAttribute="leading" secondItem="5LO-h6-xvX" secondAttribute="leading" constant="15" id="LRg-BU-K2W"/>
@@ -131,7 +131,7 @@
                             <constraint firstItem="AZT-lg-PYM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M5e-aQ-VCJ" secondAttribute="trailing" constant="8" symbolic="YES" id="gfg-hZ-Be4"/>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XTp-Bb-Ybm" secondAttribute="trailing" symbolic="YES" id="nI3-Rn-qqo"/>
                             <constraint firstItem="eqY-Fh-vug" firstAttribute="centerY" secondItem="gYX-Kt-SAQ" secondAttribute="centerY" id="qAH-v2-31a"/>
-                            <constraint firstItem="eqY-Fh-vug" firstAttribute="leading" secondItem="gYX-Kt-SAQ" secondAttribute="trailing" constant="20" id="r0i-hS-1eo"/>
+                            <constraint firstItem="eqY-Fh-vug" firstAttribute="leading" secondItem="gYX-Kt-SAQ" secondAttribute="trailing" constant="10" id="r0i-hS-1eo"/>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="bottom" secondItem="gYX-Kt-SAQ" secondAttribute="bottom" constant="20" id="tEo-jr-jZm"/>
                             <constraint firstItem="eqY-Fh-vug" firstAttribute="top" secondItem="5LO-h6-xvX" secondAttribute="top" constant="572" id="yJZ-BV-ZFd"/>
                         </constraints>
