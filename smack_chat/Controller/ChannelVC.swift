@@ -17,7 +17,7 @@ class ChannelVC: UIViewController {
         super.viewDidLoad()
         self.revealViewController()?.rearViewRevealWidth = self.view.frame.size.width - 60
         
-        NotificationCenter.default.addObserver(self, selector: #selector(UserDataDidChange), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(userDataDidChange), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
     }
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
@@ -26,10 +26,11 @@ class ChannelVC: UIViewController {
     @IBAction func prepareForWind(segue: UIStoryboardSegue, sender: Any?) {        
     }
     
-    @objc func UserDataDidChange(_ notif: Notification) {
+    @objc func userDataDidChange(_ notif: Notification) {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         } else {
             loginBtn.setTitle("login", for: .normal)
             userImg.backgroundColor = .clear
