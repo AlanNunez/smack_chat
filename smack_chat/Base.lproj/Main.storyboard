@@ -73,7 +73,7 @@
                                 <state key="normal" image="addChannelButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqY-Fh-vug">
-                                <rect key="frame" x="102" y="592" width="87" height="33"/>
+                                <rect key="frame" x="102" y="592" width="43" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,12 +117,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" secondItem="AZT-lg-PYM" secondAttribute="trailing" constant="72" id="1vL-Hv-MyC"/>
-                            <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eqY-Fh-vug" secondAttribute="trailing" constant="186" id="AhZ-gR-HLW"/>
                             <constraint firstItem="XTp-Bb-Ybm" firstAttribute="top" secondItem="5LO-h6-xvX" secondAttribute="top" constant="20" id="CXD-fd-mfE"/>
                             <constraint firstItem="zyp-av-Gd2" firstAttribute="trailing" secondItem="5LO-h6-xvX" secondAttribute="trailing" id="FSx-Ex-MpZ"/>
                             <constraint firstItem="XTp-Bb-Ybm" firstAttribute="leading" secondItem="5LO-h6-xvX" secondAttribute="leading" constant="15" id="LRg-BU-K2W"/>
                             <constraint firstItem="M5e-aQ-VCJ" firstAttribute="leading" secondItem="XTp-Bb-Ybm" secondAttribute="leading" id="NLt-ZO-HTz"/>
                             <constraint firstItem="gYX-Kt-SAQ" firstAttribute="top" secondItem="zyp-av-Gd2" secondAttribute="bottom" constant="20" id="OE0-M5-7ir"/>
+                            <constraint firstItem="5LO-h6-xvX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eqY-Fh-vug" secondAttribute="trailing" symbolic="YES" id="Q0q-QO-9MP"/>
                             <constraint firstItem="gYX-Kt-SAQ" firstAttribute="leading" secondItem="M5e-aQ-VCJ" secondAttribute="leading" id="So6-Pk-p9R"/>
                             <constraint firstItem="AZT-lg-PYM" firstAttribute="centerY" secondItem="M5e-aQ-VCJ" secondAttribute="centerY" id="V2d-Kr-O7d"/>
                             <constraint firstItem="M5e-aQ-VCJ" firstAttribute="top" secondItem="XTp-Bb-Ybm" secondAttribute="bottom" constant="20" id="ZfW-h6-Twb"/>
@@ -182,6 +182,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="YxZ-ww-GFS" eventType="touchUpInside" id="Tt0-J4-kbn"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sCF-A7-BdO">
                                 <rect key="frame" x="129.5" y="80" width="116" height="40"/>
@@ -250,6 +253,14 @@
                                     <action selector="createAccountBtnPressed:" destination="YxZ-ww-GFS" eventType="touchUpInside" id="FIF-s7-zWH"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="uml-FV-OjE">
+                                <rect key="frame" x="177.5" y="547" width="20" height="20"/>
+                                <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="IuY-n5-xj4"/>
+                                    <constraint firstAttribute="width" constant="20" id="LMh-vb-FM4"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -258,15 +269,20 @@
                             <constraint firstItem="0bv-LF-Xb5" firstAttribute="top" secondItem="sCF-A7-BdO" secondAttribute="bottom" constant="40" id="DCs-Bm-fhd"/>
                             <constraint firstItem="44h-WY-LCN" firstAttribute="centerX" secondItem="Z4k-GB-chM" secondAttribute="centerX" id="Kw4-m2-brI"/>
                             <constraint firstItem="sCF-A7-BdO" firstAttribute="top" secondItem="Tpi-gR-zkH" secondAttribute="top" constant="60" id="VXo-2h-Pjg"/>
+                            <constraint firstItem="uml-FV-OjE" firstAttribute="centerX" secondItem="Z4k-GB-chM" secondAttribute="centerX" id="ZlT-YQ-yD2"/>
                             <constraint firstItem="44h-WY-LCN" firstAttribute="top" secondItem="83S-34-1vK" secondAttribute="bottom" id="b9k-5P-rgB"/>
                             <constraint firstItem="83S-34-1vK" firstAttribute="centerX" secondItem="Z4k-GB-chM" secondAttribute="centerX" id="c8D-uJ-D6H"/>
                             <constraint firstItem="sCF-A7-BdO" firstAttribute="centerX" secondItem="Z4k-GB-chM" secondAttribute="centerX" id="g9R-eG-h5J"/>
                             <constraint firstItem="0bv-LF-Xb5" firstAttribute="centerX" secondItem="Z4k-GB-chM" secondAttribute="centerX" id="jF0-xy-wHk"/>
+                            <constraint firstItem="Tpi-gR-zkH" firstAttribute="bottom" secondItem="uml-FV-OjE" secondAttribute="bottom" constant="100" id="xqw-O2-5pk"/>
                             <constraint firstItem="83S-34-1vK" firstAttribute="top" secondItem="0bv-LF-Xb5" secondAttribute="bottom" constant="40" id="zRh-hq-JLy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tpi-gR-zkH"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="OSS-kR-Fw6" id="LDc-I9-St7"/>
+                        <outlet property="spinner" destination="uml-FV-OjE" id="Hp9-FA-ajm"/>
+                        <outlet property="userNameTxt" destination="deD-80-3Nd" id="U6F-hU-9xz"/>
                         <segue destination="RcW-kC-cm6" kind="show" identifier="toCreateAccount" id="Tev-3n-d1n"/>
                     </connections>
                 </viewController>
@@ -410,6 +426,7 @@
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-t4-ANW">
                                 <rect key="frame" x="177.5" y="528" width="20" height="20"/>
+                                <color key="tintColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="Dpg-dT-YKM"/>
                                     <constraint firstAttribute="height" constant="20" id="odO-sx-rKP"/>

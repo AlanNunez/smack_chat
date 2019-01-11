@@ -40,7 +40,8 @@ class ChannelVC: UIViewController {
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         } else {
             loginBtn.setTitle("login", for: .normal)
-            userImg.backgroundColor = .clear
+            userImg.image = UIImage(named: "menuProfileIcon")
+            userImg.backgroundColor = UIColor.clear
         }
     }
 }
