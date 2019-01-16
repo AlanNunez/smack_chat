@@ -13,6 +13,8 @@ class ChatVC: UIViewController {
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
     
+    @IBOutlet weak var messageTxtBox: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,6 +67,8 @@ class ChatVC: UIViewController {
         getMessage()
     }
     
+    @IBAction func sendMessagePressed(_ sender: Any) {
+    }
     func getMessage() {
         guard let channelsId = MessageService.instance.selectedChannel?.id else { return }
         MessageService.instance.findAllMessageForChannel(channelId: channelsId) { (success) in

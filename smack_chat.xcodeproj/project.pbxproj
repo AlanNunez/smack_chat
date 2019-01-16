@@ -19,6 +19,7 @@
 		6338FEB121E9FB37008E2A69 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6338FEAF21E9FB37008E2A69 /* AddChannelVC.xib */; };
 		6338FEB321EA2AFD008E2A69 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6338FEB221EA2AFD008E2A69 /* SocketService.swift */; };
 		E976884021EDF8CD001BE72B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976883F21EDF8CD001BE72B /* Message.swift */; };
+		E976884321EF5A29001BE72B /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E976884221EF5A28001BE72B /* KeyboardBoundView.swift */; };
 		E9794FED21DF95C60095A09F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9794FEC21DF95C60095A09F /* GradientView.swift */; };
 		E980058021E4C63A00FBB84E /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980057F21E4C63A00FBB84E /* CreateAccountVC.swift */; };
 		E980058321E4DC2900FBB84E /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E980058221E4DC2900FBB84E /* AuthServices.swift */; };
@@ -51,6 +52,7 @@
 		A7E84A972BD360BFD60ED60C /* Pods-smack_chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack_chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack_chat/Pods-smack_chat.debug.xcconfig"; sourceTree = "<group>"; };
 		D1940B105941C7DDBCD0B3F3 /* Pods-smack_chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack_chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack_chat/Pods-smack_chat.release.xcconfig"; sourceTree = "<group>"; };
 		E976883F21EDF8CD001BE72B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = smack_chat/Model/Message.swift; sourceTree = SOURCE_ROOT; };
+		E976884221EF5A28001BE72B /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		E9794FEC21DF95C60095A09F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E980057F21E4C63A00FBB84E /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		E980058221E4DC2900FBB84E /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				E980058421E503C000FBB84E /* RoundedButton.swift */,
 				E9C38D4B21E6328600D65E40 /* AvatarCell.swift */,
 				E9C38D4D21E653CB00D65E40 /* CircleImage.swift */,
+				E976884221EF5A28001BE72B /* KeyboardBoundView.swift */,
 			);
 			name = View;
 			path = smack_chat/View;
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E976884321EF5A29001BE72B /* KeyboardBoundView.swift in Sources */,
 				6338FEB321EA2AFD008E2A69 /* SocketService.swift in Sources */,
 				6321C21A21E6D66F00474A6D /* ProfileVC.swift in Sources */,
 				6338FEAD21E98C99008E2A69 /* ChannelCell.swift in Sources */,
