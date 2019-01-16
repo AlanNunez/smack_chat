@@ -18,6 +18,11 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.bindToKeyboard()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
+        
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -28,7 +33,7 @@ class ChatVC: UIViewController {
         
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: {(success) in
-                  NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             })
         }
         
@@ -60,6 +65,9 @@ class ChatVC: UIViewController {
     @objc func channelSelected(_ notif: Notification) {
         updateWithChannel()
     }
+    @objc func handleTap() {
+        view.endEditing(true)
+    }
     
     func updateWithChannel() {
         let channelName = MessageService.instance.selectedChannel?.channelTitle ?? ""
@@ -68,6 +76,17 @@ class ChatVC: UIViewController {
     }
     
     @IBAction func sendMessagePressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn {
+            guard let channelId = MessageService.instance.selectedChannel?.id else { return }
+            guard let message = messageTxtBox.text else { return }
+            
+            SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
+                if success {
+                    self.messageTxtBox.text = ""
+                    self.messageTxtBox.resignFirstResponder()
+                }
+            }
+        }
     }
     func getMessage() {
         guard let channelsId = MessageService.instance.selectedChannel?.id else { return }
