@@ -39,9 +39,9 @@ class UserDataService {
         var r, g, b, a : NSString?
         
         scanner.scanUpToCharacters(from: comma, into: &r)
-         scanner.scanUpToCharacters(from: comma, into: &g)
-         scanner.scanUpToCharacters(from: comma, into: &b)
-         scanner.scanUpToCharacters(from: comma, into: &a)
+        scanner.scanUpToCharacters(from: comma, into: &g)
+        scanner.scanUpToCharacters(from: comma, into: &b)
+        scanner.scanUpToCharacters(from: comma, into: &a)
         
         
         let defaultColor = UIColor.lightGray
@@ -72,5 +72,5 @@ class UserDataService {
         AuthService.instance.authToken = ""
         MessageService.instance.clearChannels()
     }
-
+    
 }
