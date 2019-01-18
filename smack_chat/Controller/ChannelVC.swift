@@ -84,7 +84,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count", MessageService.instance.channels.count)
         return MessageService.instance.channels.count
     }
     
