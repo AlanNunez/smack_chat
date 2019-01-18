@@ -45,7 +45,7 @@
 		6321C21921E6D66F00474A6D /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		6338FEA821E96F65008E2A69 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		6338FEAA21E97009008E2A69 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = smack_chat/Model/Channel.swift; sourceTree = SOURCE_ROOT; };
-		6338FEAC21E98C99008E2A69 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelCell.swift; path = /Users/desarrollo/Documents/smack_chat/smack_chat/View/ChannelCell.swift; sourceTree = "<absolute>"; };
+		6338FEAC21E98C99008E2A69 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		6338FEAE21E9FB37008E2A69 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		6338FEAF21E9FB37008E2A69 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		6338FEB221EA2AFD008E2A69 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
