@@ -12,16 +12,11 @@ import SocketIO
 class SocketService: NSObject {
     
     static let instance = SocketService()
-    private(set) var socket: SocketIOClient!
+    private static let manager = SocketManager(socketURL: URL(string: BASE_URL)!, config: [.log(true), .compress])
+    private(set) var socket: SocketIOClient! = SocketService.manager.defaultSocket
     
     override init() {
         super.init()
-    }
-    
-    let manager = SocketManager(socketURL: URL(string: BASE_URL)!, config: [.log(true), .compress])
-    
-    func setupSocket() {
-        socket = manager.defaultSocket
     }
     
     func establishConnection() {

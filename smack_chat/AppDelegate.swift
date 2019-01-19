@@ -34,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        SocketService.instance.setupSocket()
         SocketService.instance.establishConnection()
     }
 
