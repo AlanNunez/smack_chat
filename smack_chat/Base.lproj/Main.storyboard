@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -705,17 +705,26 @@
                                     <outlet property="delegate" destination="XOu-Rk-azw" id="y2V-cj-5AK"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfv-sA-oKQ">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dba-nA-Bxg" firstAttribute="leading" secondItem="fTi-Lk-k0x" secondAttribute="leading" id="CXT-KP-M88"/>
                             <constraint firstItem="80j-DD-prz" firstAttribute="trailing" secondItem="tRd-uf-UEh" secondAttribute="trailing" id="DBX-47-s5f"/>
+                            <constraint firstItem="Pfv-sA-oKQ" firstAttribute="leading" secondItem="tRd-uf-UEh" secondAttribute="leading" constant="8" id="Kbs-Tq-RLe"/>
                             <constraint firstItem="W3N-KP-Tnk" firstAttribute="centerY" secondItem="o1I-hb-3VN" secondAttribute="centerY" id="Nib-n3-RgU"/>
+                            <constraint firstItem="o1I-hb-3VN" firstAttribute="top" secondItem="Pfv-sA-oKQ" secondAttribute="bottom" constant="6" id="Wks-et-E5k"/>
                             <constraint firstItem="tRd-uf-UEh" firstAttribute="trailing" secondItem="W3N-KP-Tnk" secondAttribute="trailing" constant="8" id="XhS-Rb-fO1"/>
                             <constraint firstItem="o1I-hb-3VN" firstAttribute="leading" secondItem="tRd-uf-UEh" secondAttribute="leading" id="a8X-7M-C5r"/>
                             <constraint firstItem="o1I-hb-3VN" firstAttribute="top" secondItem="80j-DD-prz" secondAttribute="bottom" constant="30" id="dOg-iB-wft"/>
                             <constraint firstItem="80j-DD-prz" firstAttribute="top" secondItem="dba-nA-Bxg" secondAttribute="bottom" id="dXC-IS-JBt"/>
                             <constraint firstItem="80j-DD-prz" firstAttribute="leading" secondItem="tRd-uf-UEh" secondAttribute="leading" id="g4C-kr-ZCa"/>
+                            <constraint firstItem="tRd-uf-UEh" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pfv-sA-oKQ" secondAttribute="trailing" symbolic="YES" id="l0h-nd-S68"/>
                             <constraint firstItem="o1I-hb-3VN" firstAttribute="bottom" secondItem="tRd-uf-UEh" secondAttribute="bottom" id="l1b-uh-oEg"/>
                             <constraint firstItem="tRd-uf-UEh" firstAttribute="trailing" secondItem="o1I-hb-3VN" secondAttribute="trailing" id="rw2-lj-X77"/>
                             <constraint firstItem="dba-nA-Bxg" firstAttribute="top" secondItem="fTi-Lk-k0x" secondAttribute="top" id="vIT-KV-Hyn"/>
@@ -729,6 +738,7 @@
                         <outlet property="messageTxtBox" destination="o1I-hb-3VN" id="StM-Xt-fBx"/>
                         <outlet property="sendBtn" destination="W3N-KP-Tnk" id="BfS-6O-Zpo"/>
                         <outlet property="tableView" destination="80j-DD-prz" id="LyS-No-3EQ"/>
+                        <outlet property="typeUsersLbl" destination="Pfv-sA-oKQ" id="Dpv-aG-xcs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvC-QV-FaP" userLabel="First Responder" sceneMemberID="firstResponder"/>

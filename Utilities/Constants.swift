@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias CompletionHandler = (_ Sucess: Bool) -> ()
+typealias CompletionHandler = (_ Success: Bool) -> ()
 
 // URL Constants
 let BASE_URL = "https://smack-app-host.herokuapp.com/v1/"
