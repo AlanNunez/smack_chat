@@ -16,6 +16,7 @@ class MessageService {
     
     var channels = [Channel]()
     var selectedChannel : Channel?
+    var userUnreadChannels = [String]()
     
     var messages = [Message]()
     
