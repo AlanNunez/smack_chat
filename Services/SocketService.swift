@@ -62,7 +62,6 @@ class SocketService: NSObject {
             }
             let newMessage = Message(message: msgBody, userName: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
             MessageService.instance.messages.append(newMessage)
-            
             completion(newMessage)
         }
     }
